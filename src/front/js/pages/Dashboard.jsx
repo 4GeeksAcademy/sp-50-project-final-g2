@@ -8,13 +8,14 @@ export const Dashboard = () => {
   const { store, actions } = useContext(Context);
 
   return (
-    <div className="text-center my-auto">
+    <div className="col-6 text-start my-auto">
       <div className="error mx-auto" data-text="Bienvenido">
-        Bienvenido
+        Bienvenido,  
+        {localStorage.getItem('name')}
       </div>
-      <p>
+      <div className= "col-7">
         <img src={logo} />
-      </p>
+      </div>
       <p><h3>Warehouse and Operations Planning & Reporting</h3></p>
     </div>
   );

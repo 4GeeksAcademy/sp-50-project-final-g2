@@ -10857,6 +10857,12 @@
     }
   }
   
+  .bg-form-image {
+    background: url("http://revaluationbd.com/new/images/istockphoto-1271752802-170667a.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  
   .bg-login-image {
     background: url("https://www.cocinasindustrialeszeca.com/wp-content/uploads/2020/05/estaciones-de-trabajo-cocina-profesional-2.jpg");
     background-position: center;
@@ -10868,6 +10874,7 @@
     background-position: center;
     background-size: cover;
   }
+
   
   .bg-password-image {
     background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800");

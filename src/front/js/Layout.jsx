@@ -7,6 +7,7 @@ import { BackendURL } from "./component/BackendURL.jsx";
 import { Navbar } from "./component/Navbar.jsx";
 import { Sidebar } from "./component/Sidebar.jsx";
 import { Footer } from "./component/Footer.jsx";
+import { ContactForm } from "./component/ContactForm.jsx";
 // Import custom pages
 import { Home } from "./pages/Home.jsx";
 import { Demo } from "./pages/Demo.jsx";
@@ -21,7 +22,6 @@ import { References } from "./pages/References.jsx";
 import { Suppliers } from "./pages/Suppliers.jsx";
 import { NotFound } from "./pages/NotFound.jsx";
 import { Prueba } from "./pages/Prueba.jsx";
-import { ContactForm } from "./component/ContactForm.jsx";
 import { Dashboard } from "./pages/Dashboard.jsx";
 
 // Create your first component
@@ -45,17 +45,16 @@ const Layout = () => {
                             <Route element={<Register />} path="/register" />
                             <Route element={<ContactForm />} path="/contact" />
                             <Route element={<NotFound />} path="*" />
-                            {/* <Route element={<Forbiden />} path ="forbiden" /> */}
                             {/* <Route element={<Demo />} path="/demo" /> */}
                             {/* <Route element={<Single />} path="/single/:theid" /> */}
                             {/* <Route element={<Prueba />} path="/prueba" /> */}
                         </Routes>
                     :
                         <div className="row">
-                            <div className="col-2 col-md-3">
+                            <div className="col-2">
                                 <Sidebar />
                             </div>
-                            <div className="col-10 col-md-9 mt-4">
+                            <div className="col-9 mt-4">
                                 <Routes>
                                     <Route element={<Dashboard />} path="/dashboard" />
                                     <Route element={<Recipes />} path="/recipes" />
